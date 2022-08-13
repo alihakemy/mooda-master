@@ -15,6 +15,23 @@ android {
         manifestPlaceholders = [appPackageName: "${applicationId}"]
 
     }
+    signingConfigs {
+        release {
+
+            storeFile file('G:/mooda-master/mooda.jks')
+            storePassword  'usmart'
+            keyPassword  'usmart'
+            keyAlias 'usmart'
+        }
+        debug {
+//            storeFile file('G:/mooda-master/mooda.jks')
+//            storePassword  'usmart'
+//            keyPassword  'usmart'
+//            keyAlias 'usmart'
+
+
+        }
+    }
     dexOptions {
         jumboMode true
     }
@@ -33,10 +50,12 @@ android {
 
     buildTypes {
         release {
+            signingConfig signingConfigs.release
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
