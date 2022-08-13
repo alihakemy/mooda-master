@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "778991118790",
+    "firebase_url": "https://moda-e63c9.firebaseio.com",
+    "project_id": "moda-e63c9",
+    "storage_bucket": "moda-e63c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778991118790:android:5ae1eba4f2798f183eeac7",
+        "android_client_info": {
+          "package_name": "com.usmart.com.moda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778991118790-5ra63pd21lbdq6gtsolrh6of79ennin5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.usmart.com.moda",
+            "certificate_hash": "d642fac11baf2e1e643226017b3bfe6dc5e747b4"
+          }
+        },
+        {
+          "client_id": "778991118790-qspi0ei8u28ojrvd5d1lcl3p4kbouvm3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.usmart.com.moda",
+            "certificate_hash": "f098230234417367d60af02c759a092cb75123a6"
+          }
+        },
+        {
+          "client_id": "778991118790-nv8t7ljr748rjlge6deb8mg5gap850e9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBe0BkHyXPH0VNpzrJ7FT_dIj_Fil68Vsk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "778991118790-nv8t7ljr748rjlge6deb8mg5gap850e9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "778991118790-kb10ihsj22ligkjphkhucbov544ol5pj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "mooda.moodaApp.com"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

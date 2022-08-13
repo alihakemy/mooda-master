@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:background="@drawable/border_bottom"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+
+
+    <TextView
+        android:id="@+id/tv_Key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ellipsize="start"
+        android:padding="12dp"
+        android:gravity="right|center_vertical"
+        android:layout_gravity="right|center_vertical"
+        android:text="@string/MoreVIP"
+        android:textColor="#090909"
+        android:textSize="15sp"
+        style="@style/BoldText" />
+
+    <CheckBox
+        android:id="@+id/Icon"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:button="@drawable/check_select"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="3"
+        android:focusable="false"
+        android:gravity="right|center_vertical"
+        android:src="@mipmap/def" />
+
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/padding_10"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/MainPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@+id/btn_Next"
+                android:layout_margin="30dp"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/def2"
+                android:transitionName="@string/app_name" />
+
+            <Button
+                android:id="@+id/btn_Next"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="25dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/btn_blue_gradient_5"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:text="@string/Start"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                style="@style/BoldText" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

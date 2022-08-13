@@ -1,0 +1,117 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/List"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/btn_gray_radius10"
+    android:layoutDirection="ltr"
+    android:padding="20dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:id="@+id/details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/Actions"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_DefAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:gravity="right"
+                android:text="@string/MainAddress"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                style="@style/BoldText"/>
+
+            <TextView
+                android:id="@+id/tv_Type_Work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:gravity="right"
+                android:text="@string/Work"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                style="@style/BoldText"/>
+
+            <TextView
+                android:id="@+id/tv_Type_Home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:gravity="right"
+                android:text="@string/House"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                style="@style/BoldText" />
+
+            <TextView
+                android:id="@+id/tv_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                style="@style/BoldText" />
+
+            <TextView
+                android:id="@+id/tv_Address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:text="22/9/2020"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                style="@style/BoldText" />
+
+            <TextView
+                android:id="@+id/tv_City"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:text="22/9/2020"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                style="@style/BoldText" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/Actions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/details"
+            android:layout_alignBottom="@+id/details"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <ImageView
+                android:id="@+id/chk_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/checked4" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

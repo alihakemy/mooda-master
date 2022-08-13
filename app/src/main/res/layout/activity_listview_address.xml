@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:layoutDirection="ltr">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/Header"
+            layout="@layout/activity_header_section" />
+
+
+        <RelativeLayout
+            android:id="@+id/SearchArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Header"
+            android:background="#FFFFFF"
+            android:visibility="gone">
+
+            <SearchView
+                android:id="@+id/SearchCity"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/btn_light_gray_radius4"
+                android:drawableLeft="@mipmap/ic_search2"
+                android:layoutDirection="rtl"
+                android:paddingLeft="8dp"
+                android:paddingTop="5dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="5dp"
+                android:textColor="#8F8F8F"
+                android:textColorHint="#8F8F8F"
+                android:textDirection="rtl"
+                android:visibility="gone"></SearchView>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/noData"
+            style="@style/BoldText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="@string/NoData"
+            android:textColor="#a5a5a5"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_Continue"
+            android:layout_below="@+id/SearchArea">
+
+            <ListView
+                android:id="@+id/listViewOrders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="15dp"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="10dp"
+                android:layoutDirection="rtl"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:smoothScrollbar="true"></ListView>
+
+            <Button
+                android:id="@+id/btn_Add"
+                style="@style/BoldText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listViewOrders"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="#F5F5F5"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="@string/AddAddress"
+                android:textColor="#000000" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_Continue"
+            style="@style/BoldText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_red_radius5"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="@string/Contonio"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/HideAll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@mipmap/hide"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>

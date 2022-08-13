@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_01"
+        android:icon="@mipmap/more_01"
+        android:title="@string/Home" />
+
+    <item
+        android:id="@+id/menu_02"
+        android:icon="@mipmap/more_02"
+        android:title="@string/Account" />
+
+    <item
+        android:id="@+id/menu_03"
+        android:icon="@mipmap/more_03"
+        android:title="@string/Cart" />
+
+    <item
+        android:id="@+id/menu_04"
+        android:icon="@mipmap/more_04"
+        android:title="@string/Offers" />
+
+    <item
+        android:id="@+id/menu_05"
+        android:icon="@mipmap/more_05"
+        android:title="@string/Notifications" />
+
+    <item
+        android:id="@+id/menu_06"
+        android:icon="@mipmap/more_06"
+        android:title="@string/About" />
+
+    <item
+        android:id="@+id/menu_07"
+        android:icon="@mipmap/more_07"
+        android:title="@string/ShareApp" />
+
+    <item
+        android:id="@+id/menu_08"
+        android:icon="@mipmap/more_08"
+        android:title="@string/Conditions" />
+
+    <item
+        android:id="@+id/menu_11"
+        android:icon="@mipmap/more_08"
+        android:title="@string/ReturnPolicy" />
+
+    <item
+        android:id="@+id/menu_12"
+        android:icon="@mipmap/more_08"
+        android:title="@string/DeliveryInfo" />
+    <item
+        android:id="@+id/menu_09"
+        android:icon="@mipmap/more_09"
+        android:title="@string/Request" />
+
+    <item
+        android:id="@+id/menu_10"
+        android:icon="@mipmap/more_10"
+        android:title="@string/Contact" />
+
+</menu>

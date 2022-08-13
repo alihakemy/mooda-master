@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="ltr"
+    android:background="#e72c33"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/MenuButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:onClick="gotoBack"
+        android:padding="10dp"
+        android:src="@mipmap/arrow_w" />
+
+    <TextView
+        android:id="@+id/MainTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/MenuButton"
+        android:layout_toRightOf="@+id/LeftSide"
+        android:gravity="center"
+        android:drawablePadding="5dp"
+        android:text="@string/NewAd"
+        android:textColor="#FFFFFF"
+        style="@style/BoldText"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/LeftSide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/Persent"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/CartButton"
+            android:contentDescription="@string/app_name"
+            android:onClick="gotoSearch"
+            android:visibility="invisible"
+            android:paddingTop="5dp" />
+
+        <FrameLayout
+            android:id="@+id/CartButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            android:onClick="gotoCart">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="right"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/ic_cart" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_CartNum"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="right|top"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#fff"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

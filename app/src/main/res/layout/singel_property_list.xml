@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/List"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tv_Title"
+        style="@style/BoldText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#F5F5F5"
+        android:gravity="right"
+        android:padding="10dp"
+        android:text="ertrt"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+
+    <com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView
+        android:id="@+id/lvItems"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:smoothScrollbar="true"></com.github.paolorotolo.expandableheightlistview.ExpandableHeightListView>
+
+</LinearLayout>

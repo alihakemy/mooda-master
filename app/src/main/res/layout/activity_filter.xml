@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:layoutDirection="ltr">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/Header"
+            layout="@layout/activity_header_newad" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingTop="30dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    style="@style/BoldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:maxLines="3"
+                    android:minHeight="50dp"
+                    android:padding="10dp"
+                    android:text="@string/Cat"
+                    android:textColor="#18151B"
+                    android:textColorHint="#A8A8A8"
+                    android:textSize="12sp"></TextView>
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/Tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Header"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:layoutDirection="rtl"
+                    android:overScrollMode="never"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="@android:color/transparent"
+                    app:tabIndicatorHeight="3dp"
+                    app:tabInlineLabel="true"
+                    app:tabMinWidth="65dp"
+                    app:tabMode="scrollable"
+                    app:tabPadding="0dp"
+                    app:tabPaddingEnd="10dp"
+                    app:tabPaddingStart="10dp"
+                    app:tabRippleColor="@android:color/transparent"
+                    app:tabSelectedTextColor="#84c549"
+                    app:tabTextColor="#222222"></com.google.android.material.tabs.TabLayout>
+
+                <TextView
+                    style="@style/BoldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/Sizes2"
+                    android:maxLines="3"
+                    android:minHeight="50dp"
+                    android:padding="10dp"
+                    android:textColor="#18151B"
+                    android:textColorHint="#A8A8A8"
+                    android:textSize="12sp"></TextView>
+
+                <utils.ExpandableHeightGridView
+                    android:id="@+id/lvMultiOptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_MultiOptionTitle"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="10dp"
+                    android:horizontalSpacing="5dp"
+                    android:layoutDirection="rtl"
+                    android:numColumns="6"
+                    android:scrollbars="none"
+                    android:smoothScrollbar="true"
+                    android:verticalSpacing="5dp"></utils.ExpandableHeightGridView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_wight_radius5"
+                        android:gravity="right|center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            style="@style/BoldText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:gravity="center"
+                            android:text="@string/Type2"
+                            android:textColor="#313131"
+                            android:textDirection="rtl"
+                            android:textSize="14sp" />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:button="@drawable/check_select"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_wight_radius5"
+                        android:gravity="right|center_vertical"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+
+                        <TextView
+                            style="@style/BoldText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="15dp"
+                            android:text="@string/Type1"
+                            android:textColor="#000000"
+                            android:textDirection="rtl"
+                            android:textSize="14sp" />
+
+                        <CheckBox
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:button="@drawable/check_select"
+                            android:checked="true"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:gravity="right" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+                <TextView
+                    style="@style/BoldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="right|center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/Price"
+                    android:textColor="#000000"
+                    android:textSize="14sp"></TextView>
+
+                <com.crystal.crystalrangeseekbar.widgets.CrystalRangeSeekbar
+                    android:id="@+id/Price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:bar_color="#DADDE3"
+                    app:bar_highlight_color="#CA0000"
+                    app:corner_radius="10"
+                    app:data_type="_float"
+                    app:gap="20"
+                    app:left_thumb_color="#DADDE3"
+                    app:left_thumb_color_pressed="#FFFFFF"
+                    app:max_value="99999"
+                    app:min_value="0"
+                    app:right_thumb_color="#DADDE3"
+                    app:right_thumb_color_pressed="#FFFFFF" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/Min"
+                        style="@style/BoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="14sp"></TextView>
+
+                    <TextView
+                        android:id="@+id/Max"
+                        style="@style/BoldText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:padding="10dp"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="14sp"></TextView>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_Add"
+                    style="@style/BoldText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/btn_blue"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/Next"
+                    android:textColor="@color/colorMain"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/HideAll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@mipmap/hide"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</FrameLayout>
